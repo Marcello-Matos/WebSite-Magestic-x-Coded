@@ -385,12 +385,14 @@ span {
 
 
 /* BREAKPOINTS */
+/* Ajuste gradual da fonte */
 @media (max-width: 1200px) {
     html {
-        font-size: 55%;
+        font-size: 75%; /* Melhorar a legibilidade */
     }
 }
 
+/* Ajustes para tablets */
 @media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
@@ -417,10 +419,58 @@ span {
     }
 }
 
+/* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
+    html {
+        font-size: 65%; /* Ajuste adicional para dispositivos móveis */
+    }
+
     #menu-icon {
         display: block;
     }
+
+    .header, .footer {
+        padding: 1rem 2%;
+    }
+
+    section {
+        padding: 8rem 2% 2rem;
+    }
+
+    .services, .portifolio {
+        padding-bottom: 5rem;
+    }
+
+    .contact {
+        padding: 4rem 2%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Adicional para telas menores que 480px */
+@media (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header, .footer, section {
+        padding: 1rem 1%;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .services, .portifolio {
+        padding-bottom: 3rem;
+    }
+}
+
 
     .navbar {
         position: absolute;
